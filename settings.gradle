@@ -1,0 +1,5 @@
+rootProject.name = 'platform'
+include 'common'
+include 'gateway'
+include 'system'
+

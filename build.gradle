@@ -1,0 +1,68 @@
+subprojects {
+    buildscript {
+        repositories {
+            maven { url 'https://maven.aliyun.com/repository/public/' }
+            maven { url 'https://maven.aliyun.com/repository/spring/' }
+            mavenCentral()
+        }
+    }
+
+    apply plugin: 'java'
+
+    group 'wang.hijack.mfe'
+    version '1.0.0'
+    sourceCompatibility = 1.8
+
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/public/' }
+        maven { url 'https://maven.aliyun.com/repository/spring/' }
+        mavenCentral()
+    }
+
+    ext {
+        set("htVersion", "5.0.6")
+        set("poiVersion", "3.17")
+        set("swaggerVersion", "2.8.0")
+        set("springBootVersion","2.2.4.RELEASE")
+        set("springCloudVersion", "Hoxton.SR1")
+    }
+
+    configurations {
+        developmentOnly
+        runtimeClasspath {
+            extendsFrom developmentOnly
+        }
+        compileOnly {
+            extendsFrom annotationProcessor
+        }
+    }
+    dependencies {
+        implementation platform("org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}")
+        implementation platform("org.springframework.boot:spring-boot-dependencies:${springBootVersion}")
+        // define dependencies without versions
+        implementation "cn.hutool:hutool-all:${htVersion}"
+        implementation "org.apache.poi:poi-ooxml:${poiVersion}"
+        implementation "io.springfox:springfox-swagger2:${swaggerVersion}"
+        implementation "io.springfox:springfox-swagger-ui:${swaggerVersion}"
+        implementation 'org.springframework.boot:spring-boot-starter-web'
+        implementation 'org.springframework.boot:spring-boot-starter-cache'
+        implementation 'org.springframework.boot:spring-boot-starter-actuator'
+        implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+        implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+        implementation 'org.jetbrains:annotations:15.0'
+        runtimeOnly 'mysql:mysql-connector-java'
+        developmentOnly 'org.springframework.boot:spring-boot-devtools'
+        compileOnly 'org.projectlombok:lombok'
+        annotationProcessor 'org.projectlombok:lombok'
+        annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+        testImplementation('org.springframework.boot:spring-boot-starter-test') {
+            exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+        }
+        testImplementation 'org.springframework.security:spring-security-test'
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+
+}

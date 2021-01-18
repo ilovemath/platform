@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "jwt",
+      "type": "wang.hijack.mfe.gateway.security.config.SecurityProperties",
+      "sourceType": "wang.hijack.mfe.gateway.security.config.SecurityProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "jwt.base64-private-key",
+      "type": "java.lang.String",
+      "sourceType": "wang.hijack.mfe.gateway.security.config.SecurityProperties"
+    },
+    {
+      "name": "jwt.header",
+      "type": "java.lang.String",
+      "sourceType": "wang.hijack.mfe.gateway.security.config.SecurityProperties"
+    },
+    {
+      "name": "jwt.timeout-seconds",
+      "type": "java.lang.Long",
+      "sourceType": "wang.hijack.mfe.gateway.security.config.SecurityProperties"
+    },
+    {
+      "name": "jwt.token-start",
+      "type": "java.lang.String",
+      "sourceType": "wang.hijack.mfe.gateway.security.config.SecurityProperties"
+    }
+  ],
+  "hints": []
+}

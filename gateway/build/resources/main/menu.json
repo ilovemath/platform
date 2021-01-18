@@ -1,0 +1,279 @@
+[
+  {
+    "title": "系统管理",
+    "path": "system",
+    "icon": "s-tools",
+    "children": [
+      {
+        "title": "用户管理",
+        "path": "user",
+        "icon": "s-custom",
+        "children": [
+          {
+            "title": "用户维护",
+            "path": "/system/user",
+            "icon": "tickets"
+          }
+        ]
+      },
+      {
+        "title": "角色管理",
+        "path": "role",
+        "icon": "suitcase",
+        "children": [
+          {
+            "title": "角色维护",
+            "path": "/system/role",
+            "icon": "tickets"
+          }
+        ]
+      },
+      {
+        "title": "菜单管理",
+        "path": "menu",
+        "icon": "menu",
+        "children": [
+          {
+            "title": "菜单维护",
+            "path": "/system/menu",
+            "icon": "tickets"
+          }
+        ]
+      },
+      {
+        "title": "机构管理",
+        "path": "dept",
+        "icon": "office-building",
+        "children": [
+          {
+            "title": "机构维护",
+            "path": "/system/dept",
+            "icon": "tickets"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "查询监控",
+    "path": "search",
+    "icon": "s-help",
+    "children": [
+      {
+        "title": "业务查询",
+        "path": "search",
+        "icon": "search",
+        "children": [
+          {
+            "title": "网银查询1",
+            "path": "/perbank/search1",
+            "icon": "tickets"
+          },
+          {
+            "title": "网银查询2",
+            "path": "/perbank/search2",
+            "icon": "tickets"
+          }
+        ]
+      },
+      {
+        "title": "监控",
+        "path": "monitor",
+        "icon": "monitor",
+        "children": [
+          {
+            "title": "系统监控",
+            "path": "/system/monitor1",
+            "icon": "tickets"
+          },
+          {
+            "title": "业务监控",
+            "path": "/system/monitor2",
+            "icon": "tickets"
+          }
+        ]
+      },
+      {
+        "title": "系统日志",
+        "path": "log",
+        "icon": "document",
+        "children": [
+          {
+            "title": "用户日志",
+            "path": "/system/log",
+            "icon": "tickets"
+          },
+          {
+            "title": "在线用户",
+            "path": "/system/online",
+            "icon": "tickets"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "业务管理",
+    "path": "business",
+    "icon": "s-marketing",
+    "children": [
+      {
+        "title": "个人网银",
+        "path": "perbank",
+        "icon": "wallet",
+        "children": [
+          {
+            "title": "网银业务1",
+            "path": "/perbank/business1",
+            "icon": "tickets"
+          },
+          {
+            "title": "网银业务2",
+            "path": "/perbank/business2",
+            "icon": "tickets"
+          }
+        ]
+      },
+      {
+        "title": "个人掌银",
+        "path": "mbank",
+        "icon": "mobile-phone",
+        "children": [
+          {
+            "title": "掌银业务1",
+            "path": "/mbank/business1",
+            "icon": "tickets"
+          },
+          {
+            "title": "掌银业务2",
+            "path": "/mbank/business2",
+            "icon": "tickets"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "参数管理",
+    "path": "parameter",
+    "icon": "s-operation",
+    "children": [
+      {
+        "title": "个人网银",
+        "path": "perbank",
+        "icon": "wallet",
+        "children": [
+          {
+            "title": "网银参数1",
+            "path": "/perbank/param1",
+            "icon": "tickets"
+          },
+          {
+            "title": "网银参数2",
+            "path": "/perbank/param2",
+            "icon": "tickets"
+          }
+        ]
+      },
+      {
+        "title": "个人掌银",
+        "path": "mbank",
+        "icon": "mobile-phone",
+        "children": [
+          {
+            "title": "掌银参数1",
+            "path": "/mbank/param1",
+            "icon": "tickets"
+          },
+          {
+            "title": "掌银参数2",
+            "path": "/mbank/param2",
+            "icon": "tickets"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "风险管理",
+    "path": "risk",
+    "icon": "s-flag",
+    "children": [
+      {
+        "title": "个人网银",
+        "path": "perbank",
+        "icon": "wallet",
+        "children": [
+          {
+            "title": "网银风险1",
+            "path": "/perbank/risk1",
+            "icon": "tickets"
+          },
+          {
+            "title": "网银风险2",
+            "path": "/perbank/risk2",
+            "icon": "tickets"
+          }
+        ]
+      },
+      {
+        "title": "个人掌银",
+        "path": "mbank",
+        "icon": "mobile-phone",
+        "children": [
+          {
+            "title": "掌银风险1",
+            "path": "/mbank/risk1",
+            "icon": "tickets"
+          },
+          {
+            "title": "掌银风险2",
+            "path": "/mbank/risk2",
+            "icon": "tickets"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": "信息管理",
+    "path": "information",
+    "icon": "info",
+    "children": [
+      {
+        "title": "信息发布",
+        "path": "deploy",
+        "icon": "share",
+        "children": [
+          {
+            "title": "信息发布1",
+            "path": "/system/info-deploy1",
+            "icon": "tickets"
+          },
+          {
+            "title": "信息发布2",
+            "path": "/system/info-deploy2",
+            "icon": "tickets"
+          }
+        ]
+      },
+      {
+        "title": "信息审批",
+        "path": "check",
+        "icon": "s-check",
+        "children": [
+          {
+            "title": "审批1",
+            "path": "/system/check1",
+            "icon": "tickets"
+          },
+          {
+            "title": "审批2",
+            "path": "/system/check2",
+            "icon": "tickets"
+          }
+        ]
+      }
+    ]
+  }
+]
